@@ -1,1 +1,193 @@
-/* SS Enterprises Website */
+/* ===== SS Enterprises Website ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#003366;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:25px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.navbar ul li a:hover{
+    color:#ffcc00;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,51,102,.8),rgba(0,51,102,.8));
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffcc00;
+    color:#003366;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+section h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:40px;
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.features div{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+#contact p{
+    text-align:center;
+    margin:10px 0;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.navbar ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
